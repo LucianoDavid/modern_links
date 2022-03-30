@@ -1,0 +1,30 @@
+.login{
+    left:-300px;
+    visibility:hidden;
+    a{
+        font-weight: bold;
+        color: #ff523b;
+    }
+  }
+  
+  .register{
+    left: 0;
+  }
+  
+  #toggle{
+    display: none;
+  }
+  
+  #toggle:checked ~ .login {
+    left: 0;
+    visibility:visible;
+  }
+  
+  #toggle:checked ~ .register {
+    left: -300px;
+    visibility:hidden;
+  }
+  
+  #toggle:checked ~ .form-btn .hrbottom {
+    transform: translateX(-10%)
+  }
